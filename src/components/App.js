@@ -18,9 +18,9 @@ useEffect(()=>{
   return (
     <div id="main">
       Email
-      <input id="inputEmail" type="text" value={email}  onChange={(e)=> setEmail(e.target.value)}/><br/>
+      <input id="inputEmail" type="text" value={email}  onChange={(e)=> setEmail(e.target.value)}/><br required/>
       Password
-      <input id="inputPassword" type="text" value={pass}  onChange={(e)=> setPass(e.target.value)}/><br/>
+      <input id="inputPassword" type="text" value={pass}  onChange={(e)=> setPass(e.target.value)}/><br required/>
       <button id="submitButton" onClick={()=> {}}>Submit</button><br/>
       <p id="emailText">Your Email : {emailVal.current}</p>
       <p id ="passwordText">Your Password : {passValue.current}</p>
